@@ -1,0 +1,51 @@
+@page
+@model CleanSkies.Pages.AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<div class="container my-4">
+    <h1 class="display-6 mb-3">About @Model.AppName</h1>
+    <p class="lead">@Model.Tagline</p>
+
+    <hr class="my-4" />
+
+    <div class="row g-4">
+        <div class="col-lg-7">
+            <h2 class="h5">What is this?</h2>
+            <p>
+                <strong>@Model.AppName</strong> is a demo site built with ASP.NET Core
+                Razor Pages. It shows how to add a Leaflet map and Chart.js charts,
+                powered by simple Minimal API endpoints.
+            </p>
+
+            <h3 class="h6 mt-4">What you will find here</h3>
+            <ul class="mb-3">
+                <li>Home page with a World map to have knowleage about the weather :-)</li>
+                <li>Forecast charts to deliver the knowleage to you in beautiful layout :-)</li>
+                <li>Clean layout and navigation :-)</li>
+            </ul>
+
+            <a class="btn btn-primary" asp-page="/Index">Go to Home</a>
+            <a class="btn btn-outline-secondary ms-2" asp-page="/Privacy">Privacy</a>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="h6 mb-3">App Info</h2>
+                    <dl class="row mb-0">
+                        <dt class="col-5">App</dt>
+                        <dd class="col-7">@Model.AppName</dd>
+
+                        <dt class="col-5">Version</dt>
+                        <dd class="col-7">@Model.Version</dd>
+
+                        <dt class="col-5">Framework</dt>
+                        <dd class="col-7">ASP.NET Core Razor Pages</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
