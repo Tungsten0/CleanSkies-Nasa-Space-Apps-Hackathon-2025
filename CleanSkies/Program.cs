@@ -1,4 +1,6 @@
 using Microsoft.Extensions.Caching.Memory;
+using CleanSkies.Models;
+using CleanSkies.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,9 +10,11 @@ builder.Services.AddMemoryCache();
 builder.Services.AddHttpClient();
 
 // Register our custom services
-builder.Services.AddScoped<Services.OpenAQService>();
-builder.Services.AddScoped<Services.MeteomaticsService>();
-builder.Services.AddScoped<Services.TempoService>();
+builder.Services.AddHttpClient<IOpenAQApi, OpenAQApi>();
+
+builder.Services.Configure<OpenAQSettings>(
+    builder.Configuration.GetSection("OpenAQApi")
+);
 
 var app = builder.Build();
 
@@ -28,36 +32,59 @@ app.MapRazorPages();
 // ---------------- Minimal API endpoints ---------------- //
 
 // Nearby stations (OpenAQ + basic AQI mapping)
-app.MapGet("/api/nearby", async (
-    double lat, double lon,
-    Services.OpenAQService openAQ,
-    IMemoryCache cache) =>
+// app.MapGet("/api/location", async (
+//     double lat, double lon,
+//     IOpenAQApi openAQ,
+//     IMemoryCache cache) =>
+// {
+//     var cacheKey = $"nearby_{lat:F4}_{lon:F4}";
+//     if (!cache.TryGetValue(cacheKey, out var result))
+//     {
+//         result = await openAQ.GetLocationDataAsync(2158);
+//         cache.Set(cacheKey, result, TimeSpan.FromMinutes(5));
+//     }
+//     return Results.Ok(result);
+// });
+
+app.MapGet("/api/location/{locationId}", async (
+    int locationId,
+    IOpenAQApi openAQ,
+    ILogger<Program> logger) =>
 {
-    var cacheKey = $"nearby_{lat:F4}_{lon:F4}";
-    if (!cache.TryGetValue(cacheKey, out var result))
+    try
     {
-        result = await openAQ.GetNearbyAsync(lat, lon);
-        cache.Set(cacheKey, result, TimeSpan.FromMinutes(5));
+        logger.LogInformation($"API request for location {locationId}");
+        var result = await openAQ.GetLocationDataAsync(locationId);
+        return Results.Content(result, "application/json");
     }
-    return Results.Ok(result);
+    catch (HttpRequestException ex)
+    {
+        logger.LogError(ex, "HTTP Request failed");
+        return Results.Json(new
+        {
+            error = "API request failed",
+            message = ex.Message,
+            locationId = locationId
+        }, statusCode: 500);
+    }
 });
 
-// Forecast (Meteomatics + simple baseline logic)
-app.MapGet("/api/forecast", async (
-    double lat, double lon,
-    Services.MeteomaticsService meteo) =>
-{
-    var forecast = await meteo.GetForecastAsync(lat, lon);
-    return Results.Ok(forecast);
-});
+// // Forecast (Meteomatics + simple baseline logic)
+// app.MapGet("/api/forecast", async (
+//     double lat, double lon,
+//     Services.MeteomaticsService meteo) =>
+// {
+//     var forecast = await meteo.GetForecastAsync(lat, lon);
+//     return Results.Ok(forecast);
+// });
 
 // TEMPO (satellite overlay or cached sample)
-app.MapGet("/api/tempo", async (
-    double lat, double lon,
-    Services.TempoService tempo) =>
-{
-    var info = await tempo.GetTempoOverlayInfoAsync(lat, lon);
-    return Results.Ok(info);
-});
+// app.MapGet("/api/tempo", async (
+//     double lat, double lon,
+//     Services.TempoService tempo) =>
+// {
+//     var info = await tempo.GetTempoOverlayInfoAsync(lat, lon);
+//     return Results.Ok(info);
+// });
 
 app.Run();
