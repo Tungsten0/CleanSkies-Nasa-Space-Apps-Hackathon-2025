@@ -31,6 +31,8 @@ app.MapRazorPages();
 
 // ---------------- Minimal API endpoints ---------------- //
 
+//If we want to cache it
+
 // Nearby stations (OpenAQ + basic AQI mapping)
 // app.MapGet("/api/location", async (
 //     double lat, double lon,
@@ -68,23 +70,5 @@ app.MapGet("/api/location/{locationId}", async (
         }, statusCode: 500);
     }
 });
-
-// // Forecast (Meteomatics + simple baseline logic)
-// app.MapGet("/api/forecast", async (
-//     double lat, double lon,
-//     Services.MeteomaticsService meteo) =>
-// {
-//     var forecast = await meteo.GetForecastAsync(lat, lon);
-//     return Results.Ok(forecast);
-// });
-
-// TEMPO (satellite overlay or cached sample)
-// app.MapGet("/api/tempo", async (
-//     double lat, double lon,
-//     Services.TempoService tempo) =>
-// {
-//     var info = await tempo.GetTempoOverlayInfoAsync(lat, lon);
-//     return Results.Ok(info);
-// });
 
 app.Run();
