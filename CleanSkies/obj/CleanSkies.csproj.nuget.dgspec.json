@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marco\\Downloads\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\CleanSkies.csproj": {}
+    "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/CleanSkies.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marco\\Downloads\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\CleanSkies.csproj": {
+    "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/CleanSkies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marco\\Downloads\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\CleanSkies.csproj",
+        "projectUniqueName": "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/CleanSkies.csproj",
         "projectName": "CleanSkies",
-        "projectPath": "C:\\Users\\marco\\Downloads\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\CleanSkies.csproj",
-        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marco\\Downloads\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\obj\\",
+        "projectPath": "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/CleanSkies.csproj",
+        "packagesPath": "/Users/hfspl/.nuget/packages/",
+        "outputPath": "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/hfspl/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -61,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
