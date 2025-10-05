@@ -1,0 +1,9 @@
+CleanSkies/appsettings.json
+CleanSkies/appsettings.Development.json
+*.user
+*.suo
+bin/
+obj/
+
+# Ignore all obj folders
+**/obj/

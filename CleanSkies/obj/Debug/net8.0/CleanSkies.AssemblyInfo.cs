@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CleanSkies")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5ce182258df773428e6b2e5fb66302c6988190d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74e1fe6cd9850d55558c4bedd43bf1bde0ef5362")]
 [assembly: System.Reflection.AssemblyProductAttribute("CleanSkies")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CleanSkies")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

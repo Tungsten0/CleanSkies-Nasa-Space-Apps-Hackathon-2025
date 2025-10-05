@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Caching.Memory;
 using CleanSkies.Models;
 using CleanSkies.Services;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -70,5 +71,22 @@ app.MapGet("/api/location/{locationId}", async (
         }, statusCode: 500);
     }
 });
+
+// app.MapGet("/api/aq/latest", (double? lat, double? lon, IMemoryCache cache) =>
+// {
+//     const string CacheKey = "aq:latest";        // 👈 agree on this key with your teammate
+
+//     if (!cache.TryGetValue(CacheKey, out LatestAqResponse? payload))
+//     {
+//         // Seed temporary fake so frontend can proceed
+//         payload = BuildFake(lat ?? 42.30, lon ?? -83.00);
+//         cache.Set(CacheKey, payload, TimeSpan.FromMinutes(2)); // short TTL
+//     }
+
+//     return Results.Json(payload, new JsonSerializerOptions
+//     {
+//         PropertyNamingPolicy = JsonNamingPolicy.CamelCase // frontend gets camelCase
+//     });
+// });
 
 app.Run();
