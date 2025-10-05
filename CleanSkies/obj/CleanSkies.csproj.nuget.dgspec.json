@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/CleanSkies.csproj": {}
+    "C:\\Users\\USER\\Desktop\\Nasa\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\CleanSkies.csproj": {}
   },
   "projects": {
-    "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/CleanSkies.csproj": {
+    "C:\\Users\\USER\\Desktop\\Nasa\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\CleanSkies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/CleanSkies.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\Nasa\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\CleanSkies.csproj",
         "projectName": "CleanSkies",
-        "projectPath": "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/CleanSkies.csproj",
-        "packagesPath": "/Users/hfspl/.nuget/packages/",
-        "outputPath": "/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/obj/",
+        "projectPath": "C:\\Users\\USER\\Desktop\\Nasa\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\CleanSkies.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\Nasa\\CleanSkies-Nasa-Space-Apps-Hackathon-2025\\CleanSkies\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/hfspl/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -62,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

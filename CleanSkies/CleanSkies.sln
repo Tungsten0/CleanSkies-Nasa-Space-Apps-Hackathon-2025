@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanSkies", "CleanSkies.csproj", "{CABDF9E6-5CE9-0B09-0C64-A21C9AAA5020}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CABDF9E6-5CE9-0B09-0C64-A21C9AAA5020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABDF9E6-5CE9-0B09-0C64-A21C9AAA5020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABDF9E6-5CE9-0B09-0C64-A21C9AAA5020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABDF9E6-5CE9-0B09-0C64-A21C9AAA5020}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3A1793C-30BA-4F9C-B83F-605537DAC89A}
+	EndGlobalSection
+EndGlobal

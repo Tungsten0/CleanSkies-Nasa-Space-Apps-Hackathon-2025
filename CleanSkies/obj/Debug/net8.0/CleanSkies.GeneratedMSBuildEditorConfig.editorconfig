@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CleanSkies
 build_property.RootNamespace = CleanSkies
-build_property.ProjectDir = /Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/
+build_property.ProjectDir = C:\Users\USER\Desktop\Nasa\CleanSkies-Nasa-Space-Apps-Hackathon-2025\CleanSkies\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies
+build_property.MSBuildProjectDirectory = C:\Users\USER\Desktop\Nasa\CleanSkies-Nasa-Space-Apps-Hackathon-2025\CleanSkies
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[C:/Users/USER/Desktop/Nasa/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+[C:/Users/USER/Desktop/Nasa/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+[C:/Users/USER/Desktop/Nasa/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/USER/Desktop/Nasa/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/USER/Desktop/Nasa/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/USER/Desktop/Nasa/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hfspl/Documents/Github/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-y77h6w7phq
+[C:/Users/USER/Desktop/Nasa/CleanSkies-Nasa-Space-Apps-Hackathon-2025/CleanSkies/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6y7e3qumqf
